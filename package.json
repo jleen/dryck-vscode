@@ -1,0 +1,25 @@
+{
+    "name": "dryck",
+    "displayName": "Dryck",
+    "description": "Language support for Dryck markup",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dryck",
+            "aliases": ["Dryck", "dryck"],
+            "extensions": [".dryck"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dryck",
+            "scopeName": "source.dryck",
+            "path": "./syntaxes/dryck.tmLanguage.json"
+        }]
+    }
+}
